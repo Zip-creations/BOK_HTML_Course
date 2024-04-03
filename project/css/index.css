@@ -10,6 +10,7 @@ body>nav {
 section {
     display: flex;
     align-items: center;
+    grid-column: 1/4;
 }
 
 section>p {

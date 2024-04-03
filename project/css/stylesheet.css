@@ -15,6 +15,7 @@ header {
 body>nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     grid-row: 2/3;
     grid-column: 1/2;
     gap: 20px;
@@ -47,6 +48,7 @@ section {
 }
 
 img {
-    max-width: 75%;
-    max-height: 75%;
+    width: 80%;
+    height: auto;
 }
+

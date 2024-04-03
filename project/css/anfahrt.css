@@ -11,5 +11,6 @@ section>iframe {
 }
 
 section>div {
+    margin-left: 8px;
     font-size: 19px;
 }
