@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    grid-template: 20% 10% 1fr/ 1fr 1fr 1fr;
+}
+
+body>nav {
+    grid-column: 1/4;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+section>p {
+    font-size: 20px;
+}
+
+header {
+    grid-column: 1/4;
+}
