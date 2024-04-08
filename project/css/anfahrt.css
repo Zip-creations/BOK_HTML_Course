@@ -2,7 +2,6 @@ section {
     display: grid;
     grid-template: 1fr/ 1fr 1fr;
     padding: 4px;
-    margin-top: 10px;
 }
 
 section>iframe {

@@ -20,6 +20,7 @@ body>nav {
     grid-column: 1/2;
     gap: 20px;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 nav>a, nav>button {
@@ -51,4 +52,3 @@ img {
     width: 80%;
     height: auto;
 }
-

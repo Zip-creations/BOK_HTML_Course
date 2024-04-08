@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("test").addEventListener("click", () => { history.back(); });
+    document.getElementById("backButton").addEventListener("click", () => { history.back(); });
 });
