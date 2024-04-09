@@ -33,7 +33,7 @@ tr:nth-child(odd):not(:first-child) {
     grid-row: 2/3;
     grid-column: 1/2;
     display: grid;
-    grid-template: 10% 1fr / 1fr 1fr 1fr;
+    grid-template: 5% 1fr / 1fr 1fr 1fr;
 }
 
 #reservierungForm>h2 {
@@ -47,6 +47,7 @@ tr:nth-child(odd):not(:first-child) {
     border: black solid;
     border-radius: 10px;
     background-color: rgb(238, 238, 238);
+    margin-right: 10px;
 }
 
 form>div{
@@ -61,14 +62,44 @@ form>div>p {
     text-decoration: underline;
 }
 
-input[type=submit]{
+form>div>div:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+input[type=submit], input[type=reset]{
     align-self: center;
     width: 50%;
+    border: rgb(106, 106, 106) solid;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    background-color: rgb(43, 255, 43);
+}
+
+input[type=reset] {
+    margin-bottom: 5px;
+    background-color: rgb(255, 47, 47);
+}
+
+input[type=reset]:hover {
+    background-color: rgb(216, 0, 0);
+    border: black solid;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(3, 171, 0);
+    border: black solid;
+}
+
+textarea {
+    resize: none;
 }
 
 @media (max-width: 768px) {
     #reservierungForm {
-        grid-template: 10% 1fr / 1fr;
+        grid-template: 5% 1fr / 1fr;
     }
 
     #reservierungForm>h2 {

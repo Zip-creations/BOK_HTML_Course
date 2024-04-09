@@ -84,24 +84,34 @@
           </div>
 
           <div>
+            <p>Ihre Daten:</p>
             <div>
               <label for="fname">Vorname:</label>
-              <input type="text" id="fname"><br>
+              <input type="text" id="fname">
             </div>
             <div>
               <label for="lname">Nachname:</label>
-              <input type="text" id="lname"><br>
+              <input type="text" id="lname">
             </div>
             <div>
               <label for="numParent">Anzahl Erwachsener:</label>
-              <input type="number" id="numParent" min="1" value="1" size="3"><br>
+              <input type="number" id="numParent" min="1" max="9" value="1" size="3">
             </div>
             <div>
               <label for="numChild">Anzahl Kinder:</label>
-              <input type="number" id="numChild" min="0" value="0" size="3"><br>
+              <input type="number" id="numChild" min="0" max="9" value="0" size="3">
+            </div>
+            <div>
+              <label for="mail">Ihre E-Mail:</label>
+              <input type="mail" id="mail">
             </div>
           </div>
 
+          <div>
+            <p>Zusätzliche Anmerkungen:</p>
+            <textarea cols="20" rows="6" placeholder="Allergien, körperliche Einschränkungen etc."></textarea>
+          </div>
+          
           <div>
             <p>Anreise mit Haustier:</p>
             <div>
@@ -134,10 +144,11 @@
             <p>Anreise:</p>
             <input type="date" id="calendar"/>
             <p>Abreise:</p>
-            <input type="date" id="calendar"onfocus="this.min=new Date().toISOString().split('T')[0]"/> <!-- alternative to JS-->
+            <input type="date" id="calendar"onfocus="this.min=new Date().toISOString().split('T')[0]"/> <!-- alternative to JavaScript-->
           </div>
 
           <div>
+            <input type="reset" value="Reset">
             <input type="submit" value="Absenden">
           </div>
         </form>
