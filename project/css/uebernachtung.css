@@ -6,7 +6,7 @@ section {
 section>div:first-child {
     grid-row: 1/2;
     grid-column: 1/2;
-    overflow-x:auto
+    overflow-x:auto;
 }
 
 table, td, th {

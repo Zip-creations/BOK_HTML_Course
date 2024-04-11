@@ -1,0 +1,24 @@
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section>p {
+    font-family: "luckiest guy";
+    font-size: 2em;
+}
+
+#gallery {
+    display: flex;
+    align-items: center;
+}
+
+#gallery>a {
+    margin-right: 0.5em;
+}
+
+#gallery>a>img {
+    width: 100%;
+    height: auto;
+}

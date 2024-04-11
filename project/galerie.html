@@ -4,9 +4,13 @@
     <title>Impressionen</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/galerie.css">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3a7be93092.js" crossorigin="anonymous"></script> <!-- kafegay294@dacgu.com PW: FX6>9>.$EEiL:*u -->
-    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a7be93092.js" crossorigin="anonymous"></script> <!-- kafegay294@dacgu.com  PW: FX6>9>.$EEiL:*u -->
+    <link href="featherlight-v.1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link href="featherlight-v.1.7.14/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
+
   </head>
   <body>
     <header>
@@ -20,10 +24,33 @@
       <a href="uebernachtung.html"><i class="fas fa-bed"></i> Übernachtungen</a>
     </nav>
     <section>
-      
+      <div>
+        <a href="images/Betzenhausen_maps.png" data-featherlight="image">Open image in lightbox</a>
+      </div>
+      <p>Betzenhausen von oben</p>
+      <div id="gallery" data-featherlight-gallery data-featherlight-filter="a">
+        <a href="images/Betzenhausen_maps_small.png"><img src="images/Betzenhausen_maps_small.png"></a>
+        <a href="images/oben2.jpg"><img src="images/oben2.jpg"></a>
+      </div>
+      <p>Der Stadtsee</p>
+      <div id="gallery" data-featherlight-gallery data-featherlight-filter="a">
+        <a href="images/oben1.jpg"><img src="images/oben1.jpg"></a>
+        <a href="images/Stadtsee2.jpg"><img src="images/Stadtsee2.jpg" alt=""></a>
+        <a href="images/Stadtsee1.jpg"><img src="images/Stadtsee1.jpg" alt=""></a>
+      </div>
+      <p>Sehenwürdigkeiten</p>
+      <div class="labeled_gallery" id="gallery" data-featherlight-gallery data-featherlight-filter="a">
+        <a href="images/Kirche.png"><img src="images/Kirche.png" alt="Kirche St. Thomas, nach Renovation 2015"></a>
+        <a href="images/Storchennest.png"><img src="images/Storchennest.png" alt="Storchennest"></a>
+        <a href="images/Gaskugel.png"><img src="images/Gaskugel.png" alt="Gaskugel Freiburg-Betzenhausen, Ansicht von Südwest"></a>
+      </div>
     </section>
     <footer>
-      
+
     </footer>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="scripts.js"></script>
+    <script src="featherlight-v.1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="featherlight-v.1.7.14/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

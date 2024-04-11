@@ -11,6 +11,7 @@ section>div {
     border: rgb(174, 174, 174) 4px solid;
     border-radius: 10px;
     padding: 4px;
+    margin-right: 10px;
 }
 
 h1 {
