@@ -33,7 +33,7 @@ tr:nth-child(odd):not(:first-child) {
     grid-row: 2/3;
     grid-column: 1/2;
     display: grid;
-    grid-template: 5% 1fr / 1fr 1fr 1fr;
+    grid-template: 5% 1fr / 1fr 3fr 1fr;
 }
 
 #reservierungForm>h2 {
@@ -48,28 +48,36 @@ tr:nth-child(odd):not(:first-child) {
     border-radius: 10px;
     background-color: rgb(238, 238, 238);
     margin-right: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-form>div{
+form>div {
+    width: 50%;
+}
+
+form>div>div{
     padding: 0.5em;
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
 }
 
-form>div>p {
+form>div>div>p {
     font-size: 20px;
     text-decoration: underline;
 }
 
-form>div>div:not(:last-child) {
+form>div>div>div:not(:last-child) {
     margin-bottom: 5px;
 }
 
 input[type=submit], input[type=reset]{
     align-self: center;
     width: 50%;
-    border: rgb(106, 106, 106) solid;
+    border: rgb(77, 77, 77) solid;
     border-radius: 10px;
     font-size: 16px;
 }
@@ -83,18 +91,26 @@ input[type=reset] {
     background-color: rgb(255, 47, 47);
 }
 
+input[type=submit]:hover, input[type=reset]:hover {
+    border: black solid;
+}
+
 input[type=reset]:hover {
     background-color: rgb(216, 0, 0);
-    border: black solid;
 }
 
 input[type=submit]:hover {
     background-color: rgb(3, 171, 0);
-    border: black solid;
 }
 
 textarea {
     resize: none;
+}
+
+@media (max-width: 1024px) {
+    form>div {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {

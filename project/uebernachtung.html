@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      
+      <img src="images/betzenhausen_maps.png" alt="Luftaufnahme von Betzenhausen, via Google Maps" title="Luftaufnahme von Betzenhausen, via Google Maps">
     </header>
     <nav>
       <button id="backButton"><i class="fas fa-arrow-alt-circle-left"></i> Zurück</button>
@@ -73,82 +73,85 @@
         <h2>Reservierung</h2>
         <form>
           <div>
-            <select name="hotel" id="">
-              <option hidden disabled selected>Wähle ein Hotel </option>
-              <option>Viavelo hotel</option>
-              <option>Seepark Falk</option>
-              <option>Ferienwohnung am Seepark</option>
-              <option>Hotel Bären</option>
-            </select>
-          </div>
+            <div>
+              <select name="hotel" id="">
+                <option hidden disabled selected>Wähle ein Hotel </option>
+                <option>Viavelo hotel</option>
+                <option>Seepark Falk</option>
+                <option>Ferienwohnung am Seepark</option>
+                <option>Hotel Bären</option>
+              </select>
+            </div>
 
-          <div>
-            <p>Ihre Daten:</p>
             <div>
-              <label for="fname">Vorname:</label>
-              <input type="text" id="fname">
+              <p>Ihre Daten:</p>
+              <div>
+                <label for="fname">Vorname:</label>
+                <input type="text" id="fname">
+              </div>
+              <div>
+                <label for="lname">Nachname:</label>
+                <input type="text" id="lname">
+              </div>
+              <div>
+                <label for="numParent">Anzahl Erwachsener:</label>
+                <input type="number" id="numParent" min="1" max="9" value="1" size="3">
+              </div>
+              <div>
+                <label for="numChild">Anzahl Kinder:</label>
+                <input type="number" id="numChild" min="0" max="9" value="0" size="3">
+              </div>
+              <div>
+                <label for="mail">Ihre E-Mail:</label>
+                <input type="mail" id="mail">
+              </div>
             </div>
-            <div>
-              <label for="lname">Nachname:</label>
-              <input type="text" id="lname">
-            </div>
-            <div>
-              <label for="numParent">Anzahl Erwachsener:</label>
-              <input type="number" id="numParent" min="1" max="9" value="1" size="3">
-            </div>
-            <div>
-              <label for="numChild">Anzahl Kinder:</label>
-              <input type="number" id="numChild" min="0" max="9" value="0" size="3">
-            </div>
-            <div>
-              <label for="mail">Ihre E-Mail:</label>
-              <input type="mail" id="mail">
-            </div>
-          </div>
 
-          <div>
-            <p>Zusätzliche Anmerkungen:</p>
-            <textarea cols="20" rows="6" placeholder="Allergien, körperliche Einschränkungen etc."></textarea>
-          </div>
+            <div>
+              <p>Zusätzliche Anmerkungen:</p>
+              <textarea cols="20" rows="6" placeholder="Allergien, körperliche Einschränkungen etc."></textarea>
+            </div>
           
-          <div>
-            <p>Anreise mit Haustier:</p>
             <div>
-              <input type="radio" id="petYes" name="pet">
-              <label for="petYes">Ja</label>
-            </div>
-            <div>
-              <input type="radio" id="petNo" name="pet">
-              <label for="petNo">Nein</label>
-            </div>
-          </div>
-
-          <div>
-            <p>Zubuchbare Extras:</p>
-            <div>
-              <input type="checkbox" id="breakfast">
-              <label for="breakfast">Frühstück</label>
-            </div>
-            <div>
-              <input type="checkbox" id="parkingSpot">
-              <label for="parkingSpot">Parkplatz</label>
-            </div>
-            <div>
-              <input type="checkbox" id="cosmetics">
-              <label for="cosmetics">Pflegeprodukte</label>
+              <p>Anreise mit Haustier:</p>
+              <div>
+                <input type="radio" id="petYes" name="pet">
+                <label for="petYes">Ja</label>
+              </div>
+              <div>
+                <input type="radio" id="petNo" name="pet">
+                <label for="petNo">Nein</label>
+              </div>
             </div>
           </div>
-
           <div>
-            <p>Anreise:</p>
-            <input type="date" id="calendar"/>
-            <p>Abreise:</p>
-            <input type="date" id="calendar"onfocus="this.min=new Date().toISOString().split('T')[0]"/> <!-- alternative to JavaScript-->
-          </div>
+            <div>
+              <p>Zubuchbare Extras:</p>
+              <div>
+                <input type="checkbox" id="breakfast">
+                <label for="breakfast">Frühstück</label>
+              </div>
+              <div>
+                <input type="checkbox" id="parkingSpot">
+                <label for="parkingSpot">Parkplatz</label>
+              </div>
+              <div>
+                <input type="checkbox" id="cosmetics">
+                <label for="cosmetics">Pflegeprodukte</label>
+              </div>
+            </div>
 
-          <div>
-            <input type="reset" value="Reset">
-            <input type="submit" value="Absenden">
+            <div>
+              <p>Anreise:</p>
+              <input type="date" id="calendar"/>
+              <p>Abreise:</p>
+              <input type="date" id="calendar"onfocus="this.min=new Date().toISOString().split('T')[0]"/> <!-- alternative to JavaScript-->
+            </div>
+
+            <div>
+              <input type="reset" value="Reset">
+              <input type="submit" value="Absenden">
+            </div>
           </div>
         </form>
       </div>

@@ -2,7 +2,7 @@ body {
     height: 100%;
     width: 99%;
     display: grid;
-    grid-template: 20% 10% 1fr/ 1fr;
+    grid-template: 10% 10% 1fr/ 1fr;
 }
 
 header {
@@ -49,6 +49,6 @@ section {
 }
 
 img {
-    width: 80%;
-    height: auto;
+    width: 99%;
+    height: 99%;
 }

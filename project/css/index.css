@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template: 20% 10% 1fr/ 1fr 1fr 1fr;
+    grid-template: 10% 10% 1fr/ 1fr 1fr 1fr;
 }
 
 body>nav {
