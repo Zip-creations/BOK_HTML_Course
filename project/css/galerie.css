@@ -27,4 +27,10 @@ section>div>p {
 #gallery>a>img {
     width: 100%;
     height: auto;
+    border: white 5px solid;
+    margin-bottom: 10px;
+}
+
+.featherlight-inner, .featherlight-next, .featherlight-previous {
+    margin-top: -18px;
 }
