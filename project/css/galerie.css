@@ -4,7 +4,13 @@ section {
     flex-direction: column;
 }
 
-section>p {
+section>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section>div>p {
     font-family: "luckiest guy";
     font-size: 2em;
 }

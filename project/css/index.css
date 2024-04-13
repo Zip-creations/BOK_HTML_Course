@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template: 10% 10% 1fr/ 1fr 1fr 1fr;
+    grid-template: 10% 10% 1fr 10%/ 1fr 1fr 1fr;
 }
 
 body>nav {
@@ -17,6 +17,6 @@ section>p {
     font-size: 20px;
 }
 
-header {
+header, footer {
     grid-column: 1/4;
 }

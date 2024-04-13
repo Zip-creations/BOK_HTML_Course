@@ -1,0 +1,4 @@
+body>nav {
+    flex-direction: column;
+    align-content: flex-start;
+}
