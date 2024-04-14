@@ -2,3 +2,7 @@ body>nav {
     flex-direction: column;
     align-content: flex-start;
 }
+
+nav>div {
+    display: flex;
+}

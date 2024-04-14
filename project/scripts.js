@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function(){
+    $('a[data-featherlight]').featherlight();
 	$('.gallery').featherlightGallery();
     $.featherlightGallery.prototype.afterContent = function() {
         var caption = this.$currentTarget.find('img').attr('alt');
