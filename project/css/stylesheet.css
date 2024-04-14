@@ -112,13 +112,11 @@ footer>div>div>a {
 
 footer>div>div>a:hover {
     background-color: rgb(214, 214, 214);
-    border: rgb(59, 59, 59) 3px solid;
-    text-align: center;
-    padding: 0.5em;
 }
 
 footer>div>a {
     width: 10%;
     height: auto;
     justify-self: right;
+    margin-bottom: 20px;
 }
