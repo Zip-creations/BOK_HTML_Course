@@ -79,8 +79,8 @@
         <form>
           <div>
             <div>
-              <select name="hotel" id="">
-                <option hidden disabled selected>Wähle ein Hotel </option>
+              <select name="hotel" id="" required>
+                <option hidden disabled selected value="">Wähle ein Hotel </option>
                 <option>Viavelo hotel</option>
                 <option>Seepark Falk</option>
                 <option>Ferienwohnung am Seepark</option>
@@ -92,23 +92,23 @@
               <p>Ihre Daten:</p>
               <div>
                 <label for="fname">Vorname:</label>
-                <input type="text" id="fname">
+                <input type="text" id="fname" required>
               </div>
               <div>
                 <label for="lname">Nachname:</label>
-                <input type="text" id="lname">
+                <input type="text" id="lname" required>
               </div>
               <div>
                 <label for="numParent">Anzahl Erwachsener:</label>
-                <input type="number" id="numParent" min="1" max="9" value="1" size="3">
+                <input type="number" id="numParent" min="1" max="9" value="1" size="3" required>
               </div>
               <div>
                 <label for="numChild">Anzahl Kinder:</label>
-                <input type="number" id="numChild" min="0" max="9" value="0" size="3">
+                <input type="number" id="numChild" min="0" max="9" value="0" size="3" required>
               </div>
               <div>
                 <label for="mail">Ihre E-Mail:</label>
-                <input type="mail" id="mail">
+                <input type="mail" id="mail" required>
               </div>
             </div>
 
@@ -120,7 +120,7 @@
             <div>
               <p>Anreise mit Haustier:</p>
               <div>
-                <input type="radio" id="petYes" name="pet">
+                <input type="radio" id="petYes" name="pet" required>
                 <label for="petYes">Ja</label>
               </div>
               <div>
@@ -148,9 +148,9 @@
 
             <div>
               <p>Anreise:</p>
-              <input type="date" id="calendar"/>
+              <input type="date" id="calendar"required />
               <p>Abreise:</p>
-              <input type="date" id="calendar"/> <!-- alternative to JavaScript-->
+              <input type="date" id="calendar"required /> <!-- alternative to JavaScript-->
             </div>
 
             <div>
