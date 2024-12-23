@@ -34,3 +34,13 @@ section>div>p {
 .featherlight-inner, .featherlight-next, .featherlight-previous {
     margin-top: -18px;
 }
+
+.featherlight-content {
+    max-width: 50%;
+}
+
+@media (max-width: 768px) {
+    #gallery {
+        flex-wrap: wrap;
+    }
+}
